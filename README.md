@@ -23,3 +23,7 @@ brew install pyenv-virtualenv
 #### Resolved Errors
 * Error: `jupyter: No such file or directory`
     * To resolve when using Python 3: `pip3 install --upgrade --force-reinstall --no-cache-dir jupyter`
+    
+    
+## PyCharm Configuration
+* https://stackoverflow.com/questions/34685905/how-to-link-pycharm-with-pyspark
