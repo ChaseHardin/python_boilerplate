@@ -31,5 +31,16 @@ brew install pyenv-virtualenv
 ## Install Requirements
 * Run `pip install -r requirements.txt`
 
+## Update .zshrc File
+* It should include the following:
+```
+# Jupyter Notebook with PySpark
+export SPARK_PATH=~/spark-1.6.0-bin-hadoop2.6 
+export PYSPARK_DRIVER_PYTHON="jupyter" 
+export PYSPARK_DRIVER_PYTHON_OPTS="notebook"
+export PYSPARK_PYTHON=python3
+export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
+```
+
 ## Resources
 * [TDD Help](https://github.com/kawadia/pyspark.test)
