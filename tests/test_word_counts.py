@@ -11,7 +11,7 @@ def test_do_word_counts(spark_context):
     ]
 
     input_rdd = spark_context.parallelize(test_input, 1)
-    results = word_counts.do_word_counts(input_rdd)
+    actual = word_counts.do_word_counts(input_rdd)
 
     expected_results = {'hello': 2, 'spark': 3, 'again': 1}
-    assert results == expected_results
+    assert actual == expected_results

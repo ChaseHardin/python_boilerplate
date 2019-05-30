@@ -30,3 +30,6 @@ brew install pyenv-virtualenv
 
 ## Install Requirements
 * Run `pip install -r requirements.txt`
+
+## Resources
+* [TDD Help](https://github.com/kawadia/pyspark.test)
