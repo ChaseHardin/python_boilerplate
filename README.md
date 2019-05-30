@@ -27,3 +27,6 @@ brew install pyenv-virtualenv
     
 ## PyCharm Configuration
 * https://stackoverflow.com/questions/34685905/how-to-link-pycharm-with-pyspark
+
+## Install Requirements
+* Run `pip install -r requirements.txt`
