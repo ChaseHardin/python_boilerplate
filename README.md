@@ -10,7 +10,7 @@ brew install pyenv-virtualenv
 
 * Install Python on Pyenv by running: `pyenv install 3.7.3`
 * Create virtual environment by running: `pyenv virtualenv 3.7.2 <virtual_environment_name>`
-* Add `eval "$(pyenv init -)"` to `.zshrc`.
+* Add `eval "$(pyenv virtualenv-init -)"` to `.zshrc`.
 * Activate virtualenv by running: `pyenv activate <virtual_environment_name>`
 * Configure interpretor to the virtual environment
 
