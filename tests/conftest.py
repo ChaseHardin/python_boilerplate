@@ -4,8 +4,8 @@ from pyspark import SparkConf, SparkContext
 
 @pytest.fixture(scope="session")
 def spark_context(request):
-    conf = (SparkConf().setMaster("local[2]").setAppName("pytest-pyspark-local-testing"))
-    sc = SparkContext(conf=conf)
-    request.addfinalizer(lambda: sc.stop())
+    config = (SparkConf().setMaster("local[2]").setAppName("pytest-pyspark-local-testing"))
+    spark_context = SparkContext(conf=config)
+    request.addfinalizer(lambda: spark_context.stop())
 
-    return sc
+    return spark_context
